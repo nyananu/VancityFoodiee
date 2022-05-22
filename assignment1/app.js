@@ -48,8 +48,27 @@ function createCard(keys, values) {
   newLi.append(newMethodDiv);
   newMethodDiv.append(newMethodP);
   newMethodP.innerHTML = values[1];
-}
+};
 
 // show alert when clear button is clicked
+function submitRecipe(){
+    event.preventDefault();
+    // save in obj, with title as key string, and ingredient + method as array values
+    let recipeTitle = document.getElementById('recipeTitle').value;
+    let recipeIngredient = document.getElementById('recipeIngredients').value;
+    let recipeMethod = document.getElementById('recipeMethod').value;
+
+    let recipeObject = {};
+        recipeObject[recipeTitle] = [recipeIngredient, recipeMethod];
+
+    // convert this whole object to string
+    // pass into showRecipes function -> parse -> extract -> create card 
+    showRecipes(JSON.stringify(recipeObject));
+};
 
 // delete all recipes when deleteAll is clicked
+function deleteAll(){
+    event.preventDefault();
+    let cards = document.getElementById('recipeCards');
+    cards.innerHTML ="";
+};
