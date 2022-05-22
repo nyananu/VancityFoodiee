@@ -1,22 +1,49 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
 <html>
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
+        <title>Vancity Foodiee</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="">
+        <link rel="stylesheet" href="styles.css">
     </head>
+
     <body>
-        <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
-        
-        <script src="" async defer></script>
+        <!--Header-->
+        <div class="title">
+            <h1>Vancity Foodiee</h1>
+        </div>
+
+        <!--Navbar-->
+        <div class="navbar">
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="#instagram">Instagram</a></li>
+            </ul>
+        </div>
+        <hr>
+
+        <!--Form--NEEDS FLEX-->
+        <div>
+            <form class="formRecipeInput">
+                <label for="recipeTitle">Recipe Title:</label>
+                <input type="text" id="recipeTitle"> <br>
+                <label for="recipeIngredients">Ingredients:</label>
+                <textarea name="recipeIngredients" id="recipeIngredients" rows="5" cols="30"></textarea> <br>
+                <label for="recipeMethod">Method:</label>
+                <textarea name="recipeMethod" id="recipeMethod" rows="5" cols="30"></textarea> <br>
+
+                <button type="submit" id="submitButton" onclick="submitRecipe();">Submit</button>
+                <button type="clear" id="clearButton" onclick="clearRecipe();">Clear</button>
+                <button type="delete" id="deleteButton" onclick="deleteAll();">Delete All</button>
+            </form>
+        </div>
+        <hr>
+
+        <!--Cards-->
+        <ul class="allRecipes"></ul>
+        <script src="app.js" async defer></script>
     </body>
 </html>

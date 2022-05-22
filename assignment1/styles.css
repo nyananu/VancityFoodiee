@@ -1,0 +1,31 @@
+/* Title Styling*/
+.title h1{
+    display: block;
+    background-color: #EF6F6C;
+}
+
+
+/* Navbar Styling*/
+.navbar ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #426A5A;
+}
+
+.navbar li{
+    float: left;
+}
+
+.navbar a{
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navbar li a:hover{
+    background-color: #7FB685;
+}
