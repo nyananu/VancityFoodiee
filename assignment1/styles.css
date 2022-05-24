@@ -132,6 +132,7 @@ p {
 .individualDiv {
   font-family: 'Montserrat Bold', sans-serif;
   display: flex;
+  
   margin: 20px;
   border-style: solid;
   text-align: center;
@@ -144,7 +145,7 @@ p {
 
 .photos {
   width: 100%;
-  object-fit: contain;
+  object-fit: cover;
 }
 
 .aboutMe{
@@ -160,11 +161,19 @@ p {
   }
 }
 
-@media (min-width: 426px) and (max-width: 768px) {
+@media (min-width: 426px) and (max-width: 2560px) {
   .individualDiv {
-    min-width: 100%;
+    min-width: 30%;
     margin-top: 30;
     margin-left: 0;
     margin-right: 0;
+    
   }
+
+  /* @media  (min-width: 769px) and (max-width:1440px) {
+    .individualDiv {
+      flex-direction: row-reverse;
+    }
+    
+  } */
 }
