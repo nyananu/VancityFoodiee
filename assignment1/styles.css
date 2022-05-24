@@ -3,7 +3,7 @@
   margin-top: 0;
   margin-bottom: 0;
   display: block;
-  background-color: #ef6f6c;
+  background-color: #4E944F;
   text-align: center;
   font-family: 'Montserrat Bold', sans-serif;
 }
@@ -15,7 +15,7 @@
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #426a5a;
+  background-color: #83BD75;
 }
 
 .navbar li {
@@ -32,18 +32,38 @@
 }
 
 .navbar li a:hover {
-  background-color: #7fb685;
+  background-color: #B4E197;
 }
 
 /* Form Styles */
 .formRecipeInput {
   padding-top: 20px;
   font-family: 'Montserrat Bold', sans-serif;
-  background-color: #e6e981;
+  background-color: #E9EFC0;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+#recipeTitle {
+  border-radius: 25px;
+  border: 2px solid 
+}
+
+#url {
+  border-radius: 25px;
+  border: 2px solid 
+}
+
+#recipeIngredients{
+  border-radius: 25px;
+  border: 2px solid 
+}
+
+#recipeMethod{
+  border-radius: 25px;
+  border: 2px solid 
 }
 
 /*Button Styles*/
@@ -54,8 +74,8 @@
 }
 
 #submitButton {
-  background-color: #4caf50; /* Green */
-  border: none;
+  background-color: #83BD75;
+  border: 2px solid;
   color: #000;
   padding: 15px 32px;
   margin-bottom: 10px;
@@ -64,16 +84,18 @@
   display: inline-block;
   font-size: 16px;
   font-family: 'Montserrat Bold', sans-serif;
+  transition-duration: 0.4s;
+  border-radius: 12px;
 }
 
 #submitButton:hover {
-  background-color: #af6d4c;
-  color: white;
+  background-color: #B4E197;
+  color: #000;
 }
 
 #clearButton {
-  background-color: #4caf50; /* Green */
-  border: none;
+  background-color: #83BD75;
+  border: 2px solid;
   color: #000;
   margin-bottom: 10px;
   padding: 15px 32px;
@@ -82,16 +104,18 @@
   display: inline-block;
   font-size: 16px;
   font-family: 'Montserrat Bold', sans-serif;
+  transition-duration: 0.4s;
+  border-radius: 12px;
 }
 
 #clearButton:hover {
-  background-color: #af6d4c;
-  color: white;
+  background-color: #B4E197;
+  color: #000; 
 }
 
 #deleteButton {
-  background-color: #4caf50; /* Green */
-  border: none;
+  background-color: #83BD75;
+  border: 2px solid;
   color: #000;
   margin-bottom: 10px;
   padding: 15px 32px;
@@ -100,16 +124,18 @@
   display: inline-block;
   font-size: 16px;
   font-family: 'Montserrat Bold', sans-serif;
+  transition-duration: 0.4s;
+  border-radius: 12px;
 }
 
 #deleteButton:hover {
-  background-color: #af6d4c;
-  color: white;
+  background-color: #B4E197;
+  color: #000;
 }
 
 /*Card Styles */
 .displayCards {
-  background-color: #ef6f6c;
+  background-color: #E9EFC0;
 }
 
 #recipeCards {
@@ -119,7 +145,6 @@
   margin-top: 0;
   margin-left: 30%;
   margin-right: 30%;
-  /* max-width: 434.92px; */
   list-style-type: none;
   padding-left: 0;
 }
@@ -136,10 +161,11 @@ p {
   border-style: solid;
   text-align: center;
   max-width: 100%;
-  background-color: #7fb685;
+  background-color: #B4E197;
   padding-left: 5%;
   padding-right: 5%;
   justify-content: space-between;
+  border-radius: 12px;
 }
 
 .individualDiv:hover {
@@ -172,11 +198,4 @@ p {
     margin-right: 0;
     
   }
-
-  /* @media  (min-width: 769px) and (max-width:1440px) {
-    .individualDiv {
-      flex-direction: row-reverse;
-    }
-    
-  } */
 }
