@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,6 +8,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!--CSS-->
     <link rel="stylesheet" href="styles.css">
+    <!--Icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!--Font-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -24,8 +25,8 @@
     <!--Navbar-->
     <div class="navbar">
         <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="about.html">About</a></li>
+            <li><a class="active" href="#home"><i class="fa fa-fw fa-home"></i>Home</a></li>
+            <li><a href="about.html"><i class="fa fa-fw fa-user"></i>About</a></li>
             <li><a href="https://www.instagram.com/vancityfoodiee/"  target=”_blank”>Instagram</a></li>
         </ul>
     </div>
@@ -36,10 +37,13 @@
         <form class="formRecipeInput">
             <label for="recipeTitle">Recipe Title:</label>
             <input type="text" id="recipeTitle" style="min-width: 247px;"> <br>
+
             <label for="recipeTitle">Image URL</label>
             <input type="text" id="url" style="min-width: 247px;"> <br>
+
             <label for="recipeIngredients">Ingredients:</label>
             <textarea name="recipeIngredients" id="recipeIngredients" rows="5" cols="30"></textarea> <br>
+            
             <label for="recipeMethod">Method:</label>
             <textarea name="recipeMethod" id="recipeMethod" rows="5" cols="30"></textarea> <br>
 

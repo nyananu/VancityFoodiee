@@ -1,9 +1,13 @@
+body {
+  background-color: #e9efc0;
+}
+
 /* Title Styles*/
 .banner h1 {
   margin-top: 0;
   margin-bottom: 0;
   display: block;
-  background-color: #4E944F;
+  background-color: #4e944f;
   text-align: center;
   font-family: 'Montserrat Bold', sans-serif;
 }
@@ -15,7 +19,7 @@
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #83BD75;
+  background-color: #83bd75;
 }
 
 .navbar li {
@@ -32,14 +36,14 @@
 }
 
 .navbar li a:hover {
-  background-color: #B4E197;
+  background-color: #b4e197;
 }
 
 /* Form Styles */
 .formRecipeInput {
   padding-top: 20px;
   font-family: 'Montserrat Bold', sans-serif;
-  background-color: #E9EFC0;
+  background-color: #e9efc0;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -47,23 +51,39 @@
 }
 
 #recipeTitle {
+  padding: 10px;
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box; /* Firefox, other Gecko */
+  box-sizing: border-box;
   border-radius: 25px;
-  border: 2px solid 
+  border: 2px solid;
 }
 
 #url {
+  padding: 10px;
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box; /* Firefox, other Gecko */
+  box-sizing: border-box;
   border-radius: 25px;
-  border: 2px solid 
+  border: 2px solid;
 }
 
-#recipeIngredients{
+#recipeIngredients {
+  padding: 10px;
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box; /* Firefox, other Gecko */
+  box-sizing: border-box;
   border-radius: 25px;
-  border: 2px solid 
+  border: 2px solid;
 }
 
-#recipeMethod{
+#recipeMethod {
+  padding: 10px;
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box; /* Firefox, other Gecko */
+  box-sizing: border-box;
   border-radius: 25px;
-  border: 2px solid 
+  border: 2px solid;
 }
 
 /*Button Styles*/
@@ -74,7 +94,7 @@
 }
 
 #submitButton {
-  background-color: #83BD75;
+  background-color: #83bd75;
   border: 2px solid;
   color: #000;
   padding: 15px 32px;
@@ -89,12 +109,12 @@
 }
 
 #submitButton:hover {
-  background-color: #B4E197;
+  background-color: #b4e197;
   color: #000;
 }
 
 #clearButton {
-  background-color: #83BD75;
+  background-color: #83bd75;
   border: 2px solid;
   color: #000;
   margin-bottom: 10px;
@@ -109,12 +129,12 @@
 }
 
 #clearButton:hover {
-  background-color: #B4E197;
-  color: #000; 
+  background-color: #b4e197;
+  color: #000;
 }
 
 #deleteButton {
-  background-color: #83BD75;
+  background-color: #83bd75;
   border: 2px solid;
   color: #000;
   margin-bottom: 10px;
@@ -129,13 +149,17 @@
 }
 
 #deleteButton:hover {
-  background-color: #B4E197;
+  background-color: #b4e197;
   color: #000;
 }
 
-/*Card Styles */
+.active {
+  background-color: #b4e197;
+}
+
+/*Card Styles*/
 .displayCards {
-  background-color: #E9EFC0;
+  background-color: #e9efc0;
 }
 
 #recipeCards {
@@ -161,7 +185,7 @@ p {
   border-style: solid;
   text-align: center;
   max-width: 100%;
-  background-color: #B4E197;
+  background-color: #b4e197;
   padding-left: 5%;
   padding-right: 5%;
   justify-content: space-between;
@@ -177,7 +201,7 @@ p {
   object-fit: cover;
 }
 
-.aboutMe{
+.aboutMe {
   font-family: 'Montserrat Bold', sans-serif;
   padding-left: 2%;
   padding-right: 2%;
@@ -196,6 +220,5 @@ p {
     margin-top: 30;
     margin-left: 0;
     margin-right: 0;
-    
   }
 }

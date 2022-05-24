@@ -27,7 +27,6 @@ function createCard(keys, values) {
   newDiv.setAttribute("class", "individualDiv");
 
   let newLi = document.createElement("li");
-
   let newTitleDiv = document.createElement("div");
   let newTitleP = document.createElement("p");
   let newUrlDiv = document.createElement("div");
@@ -42,19 +41,21 @@ function createCard(keys, values) {
   newRecipe.append(newDiv);
   newDiv.append(newLi);
 
-  // creating one card with title, ingredient and method as separate div + p elements
+  // creating one card with title
   newLi.append(newTitleDiv);
-  // newLi.append(newUrl);
   newTitleDiv.append(newTitleP);
   newTitleP.innerHTML = "Recipe: " + keys;
 
+  // + image
   newLi.append(newUrlDiv);
   newUrlDiv.append(newUrl);
 
+  // + ingredients
   newLi.append(newIngredientDiv);
   newIngredientDiv.append(newIngredientP);
   newIngredientP.innerHTML = "Ingredients: " + values[0];
 
+  // + method
   newLi.append(newMethodDiv);
   newMethodDiv.append(newMethodP);
   newMethodP.innerHTML = "Method: " + values[1];
