@@ -119,7 +119,7 @@
   margin-top: 0;
   margin-left: 30%;
   margin-right: 30%;
-  max-width: 434.92px;
+  /* max-width: 434.92px; */
   list-style-type: none;
   padding-left: 0;
 }
@@ -132,7 +132,6 @@ p {
 .individualDiv {
   font-family: 'Montserrat Bold', sans-serif;
   display: flex;
-  
   margin: 20px;
   border-style: solid;
   text-align: center;
@@ -141,6 +140,10 @@ p {
   padding-left: 5%;
   padding-right: 5%;
   justify-content: space-between;
+}
+
+.individualDiv:hover {
+  transform: scale(1.05);
 }
 
 .photos {
@@ -161,7 +164,7 @@ p {
   }
 }
 
-@media (min-width: 426px) and (max-width: 2560px) {
+@media (min-width: 426px) and (max-width: 768px) {
   .individualDiv {
     min-width: 30%;
     margin-top: 30;
