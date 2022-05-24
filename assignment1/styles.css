@@ -1,31 +1,170 @@
-/* Title Styling*/
-.title h1{
-    display: block;
-    background-color: #EF6F6C;
+/* Title Styles*/
+.banner h1 {
+  margin-top: 0;
+  margin-bottom: 0;
+  display: block;
+  background-color: #ef6f6c;
+  text-align: center;
+  font-family: 'Montserrat Bold', sans-serif;
 }
 
-
-/* Navbar Styling*/
-.navbar ul{
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #426A5A;
+/* Navbar Styles*/
+.navbar ul {
+  margin-top: 0;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #426a5a;
 }
 
-.navbar li{
-    float: left;
+.navbar li {
+  float: left;
+  font-family: 'Montserrat Bold', sans-serif;
 }
 
-.navbar a{
-    display: block;
-    color: black;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
+.navbar a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
 }
 
-.navbar li a:hover{
-    background-color: #7FB685;
+.navbar li a:hover {
+  background-color: #7fb685;
+}
+
+/* Form Styles */
+.formRecipeInput {
+  padding-top: 20px;
+  font-family: 'Montserrat Bold', sans-serif;
+  background-color: #e6e981;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/*Button Styles*/
+.buttons {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+}
+
+#submitButton {
+  background-color: #4caf50; /* Green */
+  border: none;
+  color: #000;
+  padding: 15px 32px;
+  margin-bottom: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-family: 'Montserrat Bold', sans-serif;
+}
+
+#submitButton:hover {
+  background-color: #af6d4c;
+  color: white;
+}
+
+#clearButton {
+  background-color: #4caf50; /* Green */
+  border: none;
+  color: #000;
+  margin-bottom: 10px;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-family: 'Montserrat Bold', sans-serif;
+}
+
+#clearButton:hover {
+  background-color: #af6d4c;
+  color: white;
+}
+
+#deleteButton {
+  background-color: #4caf50; /* Green */
+  border: none;
+  color: #000;
+  margin-bottom: 10px;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-family: 'Montserrat Bold', sans-serif;
+}
+
+#deleteButton:hover {
+  background-color: #af6d4c;
+  color: white;
+}
+
+/*Card Styles */
+.displayCards {
+  background-color: #ef6f6c;
+}
+
+#recipeCards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 0;
+  margin-left: 30%;
+  margin-right: 30%;
+  max-width: 434.92px;
+  list-style-type: none;
+  padding-left: 0;
+}
+
+p {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.individualDiv {
+  font-family: 'Montserrat Bold', sans-serif;
+  display: flex;
+  margin: 20px;
+  border-style: solid;
+  text-align: center;
+  max-width: 100%;
+  background-color: #7fb685;
+  padding-left: 5%;
+  padding-right: 5%;
+  justify-content: space-between;
+}
+
+.photos {
+  width: 100%;
+  object-fit: contain;
+}
+
+.aboutMe{
+  font-family: 'Montserrat Bold', sans-serif;
+  padding-left: 2%;
+  padding-right: 2%;
+}
+
+@media (max-width: 425px) {
+  #recipeCards {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+}
+
+@media (min-width: 426px) and (max-width: 768px) {
+  .individualDiv {
+    min-width: 100%;
+    margin-top: 30;
+    margin-left: 0;
+    margin-right: 0;
+  }
 }
