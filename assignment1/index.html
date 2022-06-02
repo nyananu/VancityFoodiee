@@ -1,22 +1,69 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="">
-    </head>
-    <body>
-        <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
-        
-        <script src="" async defer></script>
-    </body>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Vancity Foodiee</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--CSS-->
+    <link rel="stylesheet" href="styles.css">
+    <!--Icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!--Header-->
+    <div class="banner">
+        <h1>Vancity Foodiee</h1>
+    </div>
+
+    <!--Navbar-->
+    <div class="navbar">
+        <ul>
+            <li><a class="active" href="#home"><i class="fa fa-fw fa-home"></i>Home</a></li>
+            <li><a href="about.html"><i class="fa fa-fw fa-user"></i>About</a></li>
+            <li><a href="https://www.instagram.com/vancityfoodiee/"  target=”_blank”>Instagram</a></li>
+        </ul>
+    </div>
+   
+
+    <!--Form-->
+    <div>
+        <form class="formRecipeInput">
+            <label for="recipeTitle">Recipe Title:</label>
+            <input type="text" id="recipeTitle" style="min-width: 247px;"> <br>
+
+            <label for="recipeTitle">Image URL</label>
+            <input type="text" id="url" style="min-width: 247px;"> <br>
+
+            <label for="recipeIngredients">Ingredients:</label>
+            <textarea name="recipeIngredients" id="recipeIngredients" rows="5" cols="30"></textarea> <br>
+            
+            <label for="recipeMethod">Method:</label>
+            <textarea name="recipeMethod" id="recipeMethod" rows="5" cols="30"></textarea> <br>
+
+            <div class="buttons">
+                <button type="submit" id="submitButton" onclick="submitRecipe();">Submit</button>
+                <button type="reset" id="clearButton">Clear</button>
+                <button type="delete" id="deleteButton" onclick="deleteAll();">Delete All</button>
+            </div>
+        </form>
+    </div>
+  
+
+    <!--Cards-->
+    <div class="displayCards">
+        <ul id="recipeCards">
+        </ul>
+    </div>
+
+    <!--Script-->
+    <script src="app.js"></script>
+</body>
+
 </html>
