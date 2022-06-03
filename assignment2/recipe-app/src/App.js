@@ -1,10 +1,14 @@
-import logo from './logo.svg';
-import './App.css';
+import './styles.css';
+import Header from "./components/Header";
+import RecipeContainer from "./components/RecipeContainer";
+import Footer from "./components/Footer"
 
 function App() {
   return (
       <div>
-        <h1>Hello React</h1>
+          <Header />
+          <RecipeContainer />
+          <Footer />
       </div>
   );
 }

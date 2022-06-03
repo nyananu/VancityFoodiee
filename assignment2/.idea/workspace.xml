@@ -2,25 +2,32 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2814906d-51ef-45f7-bceb-1d337aae160c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recipe-app/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recipe-app/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recipe-app/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recipe-app/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recipe-app/public/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recipe-app/public/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recipe-app/public/logo192.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recipe-app/public/logo512.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recipe-app/public/manifest.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recipe-app/public/robots.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recipe-app/src/App.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recipe-app/src/App.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recipe-app/src/App.test.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recipe-app/src/index.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recipe-app/src/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recipe-app/src/logo.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recipe-app/src/reportWebVitals.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recipe-app/src/setupTests.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../assignment1/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../assignment1/.idea/assignment1.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../assignment1/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../assignment1/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../assignment1/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/recipe-app/src/allRecipes.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/recipe-app/src/components/Footer.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/recipe-app/src/components/Header.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/recipe-app/src/components/RecipeCard.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/recipe-app/src/components/RecipeContainer.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/recipe-app/src/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/recipe-app/public/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/recipe-app/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/recipe-app/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/recipe-app/public/logo192.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/recipe-app/public/logo512.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/recipe-app/public/manifest.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/recipe-app/public/robots.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/recipe-app/src/App.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/recipe-app/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/recipe-app/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/recipe-app/src/App.test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/recipe-app/src/index.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/recipe-app/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/recipe-app/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/recipe-app/src/logo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/recipe-app/src/reportWebVitals.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/recipe-app/src/setupTests.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,6 +62,19 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="ReactDesignerToolWindowState">
+    <option name="myId2Visible">
+      <map>
+        <entry key="com.haulmont.rcb.reactComponents" value="false" />
+        <entry key="com.haulmont.rcb.reactInspector" value="false" />
+      </map>
+    </option>
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/recipe-app/src" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -63,7 +83,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1654205083012</updated>
-      <workItem from="1654205084685" duration="659000" />
+      <workItem from="1654205084685" duration="13787000" />
     </task>
     <servers />
   </component>
