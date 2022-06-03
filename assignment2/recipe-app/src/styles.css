@@ -47,22 +47,6 @@ header h1 {
     object-fit: cover;
 }
 
-.recipeTitle {
-    font-size: 1.1em;
-    margin-bottom: 6px;
-    font-weight: bolder;
-    color: grey;
-}
-
-.recipeIngredients {
-    font-size: 1.1em;
-    margin-bottom: 10px;
-    white-space: pre-wrap;
-    word-wrap: break-word;
-    font-weight: lighter;
-    color: grey;
-}
-
 /*Recipe Container component*/
 .recipeContainer {
     display: grid;

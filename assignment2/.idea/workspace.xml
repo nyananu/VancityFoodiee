@@ -2,32 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2814906d-51ef-45f7-bceb-1d337aae160c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../assignment1/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../assignment1/.idea/assignment1.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../assignment1/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../assignment1/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../assignment1/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recipe-app/src/allRecipes.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recipe-app/src/components/Footer.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recipe-app/src/components/Header.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recipe-app/src/components/RecipeCard.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recipe-app/src/components/RecipeContainer.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recipe-app/src/styles.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../assignment1/.idea/sonarlint/issuestore/0/1/01397909c5f00e9fa017aa0ff73335d37fecc70f" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../assignment1/.idea/sonarlint/issuestore/4/a/4a68969ef8e858229267b842dedf42ab5dde4d50" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../assignment1/.idea/sonarlint/issuestore/8/1/8143af03f594989ae71e2d1be57beadf78357d4c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../assignment1/.idea/sonarlint/issuestore/f/6/f6013a00b362253c64368d6eebc50ea2131754e2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assignment1/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../assignment1/.idea/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assignment1/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/../assignment1/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/recipe-app/public/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/recipe-app/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/recipe-app/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/recipe-app/public/logo192.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/recipe-app/public/logo512.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/recipe-app/public/manifest.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/recipe-app/public/robots.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/recipe-app/src/App.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/recipe-app/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/recipe-app/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/recipe-app/src/App.test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/recipe-app/src/index.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/recipe-app/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/recipe-app/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/recipe-app/src/logo.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/recipe-app/src/reportWebVitals.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/recipe-app/src/setupTests.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/recipe-app/src/allRecipes.js" beforeDir="false" afterPath="$PROJECT_DIR$/recipe-app/src/allRecipes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/recipe-app/src/components/RecipeContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/recipe-app/src/components/RecipeContainer.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/recipe-app/src/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/recipe-app/src/styles.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,6 +43,7 @@
     "node.js.detected.package.eslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -83,7 +68,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1654205083012</updated>
-      <workItem from="1654205084685" duration="13787000" />
+      <workItem from="1654205084685" duration="16025000" />
     </task>
     <servers />
   </component>
