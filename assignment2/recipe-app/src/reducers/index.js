@@ -1,2 +1,8 @@
-// based on action, will do something which will be rendered on state
-// one for submit button
+// import submitReducer from "./isSubmit";
+// import { combineReducers } from "redux";
+//
+// const rootReducer = combineReducers({
+//     submit : submitReducer
+// })
+//
+// export default rootReducer;

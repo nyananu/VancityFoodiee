@@ -1,7 +1,7 @@
 @import "./componentStyles/header.css";
 @import "./componentStyles/form.css";
 @import "./componentStyles/recipeCard.css";
-@import "./componentStyles/recipeContainer.css";
+@import "./componentStyles/recipeList.css";
 @import "./componentStyles/footer.css";
 
 * {

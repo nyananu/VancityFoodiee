@@ -17,7 +17,7 @@
     display: flex;
 }
 
-.column-form, .column-buttons {
+.column-left {
     float: left;
     margin: 10px;
 }
@@ -30,26 +30,27 @@
     width: 75%;
 }
 
-.column-form input, textarea {
+.column-left input, textarea {
+    display: flex;
+    flex-direction: column;
     border-radius: 25px;
     border: 2px solid grey;
     width: 250px;
     font-family: "Source Sans Pro", sans-serif;
     padding: 10px 15px;
-    margin: 0 auto 10px auto;
-    display: block;
+    margin: 0 10px 10px 10px;
     text-align: center;
     font-size: 18px;
     color: grey;
     font-weight: 300;
 }
 
-.column-buttons {
-    display: flex;
-    flex-direction: column;
+.column-right {
+    text-align: center;
 }
 
-#submitButton, #clearButton, #deleteButton {
+#submitButton {
+    position: relative;
     background-color: #F5BA13;
     border: 2px solid;
     color: #ffffff;
@@ -61,10 +62,10 @@
     font-size: 16px;
     font-family: "Source Sans Pro", sans-serif;
     transition-duration: 0.4s;
-    border-radius: 12px;
+    border-radius: 25px;
 }
 
-#submitButton:hover, #clearButton:hover, #deleteButton:hover {
+#submitButton:hover {
     background-color: #F5BA13;
     color: #000;
 }

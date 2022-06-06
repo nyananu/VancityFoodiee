@@ -2,21 +2,29 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2814906d-51ef-45f7-bceb-1d337aae160c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recipe-app/src/componentStyles/footer.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recipe-app/src/componentStyles/form.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recipe-app/src/componentStyles/header.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recipe-app/src/componentStyles/recipeCard.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recipe-app/src/componentStyles/recipeContainer.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recipe-app/src/components/Form.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recipe-app/src/reducers/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recipe-app/src/reducers/isClear.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recipe-app/src/reducers/isSubmitReducer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/recipe-app/src/actions/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/recipe-app/src/components/RecipeList.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/recipe-app/src/context/RecipeContext.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/recipe-app/src/reducers/isSubmit.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../assignment1/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../assignment1/.idea/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../assignment1/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/../assignment1/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/recipe-app/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/recipe-app/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/recipe-app/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/recipe-app/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/recipe-app/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/recipe-app/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/recipe-app/src/allRecipes.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/recipe-app/src/componentStyles/footer.css" beforeDir="false" afterPath="$PROJECT_DIR$/recipe-app/src/componentStyles/footer.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/recipe-app/src/componentStyles/form.css" beforeDir="false" afterPath="$PROJECT_DIR$/recipe-app/src/componentStyles/form.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/recipe-app/src/componentStyles/recipeCard.css" beforeDir="false" afterPath="$PROJECT_DIR$/recipe-app/src/componentStyles/recipeCard.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/recipe-app/src/componentStyles/recipeContainer.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/recipe-app/src/components/Footer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/recipe-app/src/components/Footer.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/recipe-app/src/components/Form.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/recipe-app/src/components/AddRecipe.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/recipe-app/src/components/RecipeCard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/recipe-app/src/components/RecipeCard.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/recipe-app/src/components/RecipeContainer.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/recipe-app/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/recipe-app/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/recipe-app/src/reducers/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/recipe-app/src/reducers/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/recipe-app/src/reducers/isSubmitReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/recipe-app/src/componentStyles/recipeList.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/recipe-app/src/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/recipe-app/src/styles.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -63,6 +71,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/recipe-app/src/components" />
       <recent name="$PROJECT_DIR$/recipe-app/src" />
     </key>
   </component>
@@ -75,7 +84,8 @@
       <option name="presentableId" value="Default" />
       <updated>1654205083012</updated>
       <workItem from="1654205084685" duration="16371000" />
-      <workItem from="1654262545995" duration="10896000" />
+      <workItem from="1654262545995" duration="17353000" />
+      <workItem from="1654400076948" duration="14590000" />
     </task>
     <servers />
   </component>
