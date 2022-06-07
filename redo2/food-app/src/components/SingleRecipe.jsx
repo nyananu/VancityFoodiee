@@ -1,8 +1,10 @@
-import React from 'react';
+import React, {useState} from 'react';
 import {useDispatch} from "react-redux";
 import {deleteRecipe} from "../redux/actions";
+import Popup from "./Popup";
 
 function SingleRecipe(props){
+    const[buttonPopup, setButtonPopup]= useState(false);
     let dispatch = useDispatch();
     return(
         <div>
@@ -12,10 +14,21 @@ function SingleRecipe(props){
                      alt= "food_img"/>
                 <h3 className="recipeTitle">{props.title}</h3>
                 <p className="recipeIngredients">{props.ingredients}</p>
-                <button className='viewButton'>View Instructions</button>
+
+                <button className='viewButton'
+                        onClick={
+                            () => setButtonPopup(true)}
+                >View Instructions</button>
+
+                <Popup trigger={buttonPopup}
+                       title = {props.title}
+                       instructions = {props.instructions}
+                />
+
                 <button className='deleteButton'
-                        onClick={() => dispatch(deleteRecipe(props))}
-                >Delete</button>
+                        onClick={() => dispatch(deleteRecipe(props))}>
+                    Delete
+                </button>
             </div>
 
         </div>

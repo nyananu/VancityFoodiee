@@ -54,7 +54,8 @@ function RecipeInputForm(){
                                     id: uuid(),
                                     imgURL: imgURL,
                                     title: title,
-                                    ingredients: ingredients
+                                    ingredients: ingredients,
+                                    instructions:instructions
                                 }));
                             }}
                     >Submit</button>

@@ -10,7 +10,9 @@ function RecipeList(){
                 return <SingleRecipe key={recipe.id}
                                      imgURL={recipe.imgURL}
                                      title={recipe.title}
-                                     ingredients={recipe.ingredients} />
+                                     ingredients={recipe.ingredients}
+                                     instructions={recipe.instructions}
+                />
             })}
         </div>
     )
