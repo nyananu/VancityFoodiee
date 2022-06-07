@@ -13,7 +13,6 @@ function RecipeInputForm(){
 
     return(
         <div>
-            <h3>Recipe Input</h3>
             <form className="recipeInputForm">
                 <div className="row">
                     <div className="column-left">

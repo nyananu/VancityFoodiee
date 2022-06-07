@@ -5,8 +5,7 @@ import {useSelector} from "react-redux";
 function RecipeList(){
     let recipes = useSelector(state => state)
     return(
-        <div>
-            <h3>Recipe List</h3>
+        <div className="recipeContainer">
             {recipes.map(recipe =>{
                 return <SingleRecipe key={recipe.id}
                                      imgURL={recipe.imgURL}
