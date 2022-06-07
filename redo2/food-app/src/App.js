@@ -5,14 +5,14 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 
 function App() {
-  return (
-    <div className="App">
-        <Header/>
-      <RecipeInputForm />
-      <RecipeList />
-        <Footer/>
-    </div>
-  );
+    return (
+        <div className="App">
+            <Header/>
+            <RecipeInputForm />
+            <RecipeList />
+            <Footer/>
+        </div>
+    );
 }
 
 export default App;

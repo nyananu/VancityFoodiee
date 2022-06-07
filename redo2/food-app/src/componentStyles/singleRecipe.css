@@ -1,5 +1,9 @@
 /*RecipeCard component*/
 .recipeCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition:transform 200ms ease-in;
     background: #ffffff;
     border-radius: 7px;
     box-shadow: 0 2px 5px #cccccc;
@@ -36,8 +40,10 @@
     display: block;
     text-align: left;
     font-size: 18px;
+    height: 80px;
     color: grey;
     font-weight: 400;
+    overflow: hidden;
 }
 
 .viewButton, .deleteButton {

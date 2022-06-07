@@ -1,7 +1,6 @@
 import React, {useState} from 'react';
 import {addRecipe} from "../redux/actions"
 import {useDispatch} from "react-redux";
-import {v1 as uuid} from 'uuid';
 
 function RecipeInputForm(){
     const [title, setTitle] = useState("");
@@ -14,6 +13,7 @@ function RecipeInputForm(){
     return(
         <div>
             <form className="recipeInputForm">
+                <h3>Enter a new recipe!</h3>
                 <div className="row">
                     <div className="column-left">
                         <input
@@ -51,7 +51,6 @@ function RecipeInputForm(){
                             onClick={(event)=>{
                                 event.preventDefault();
                                 dispatch(addRecipe({
-                                    id: uuid(),
                                     imgURL: imgURL,
                                     title: title,
                                     ingredients: ingredients,

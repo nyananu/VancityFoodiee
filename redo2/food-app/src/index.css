@@ -16,6 +16,8 @@ html {
 }
 
 body{
+  justify-content: center;
+  align-items: center;
   background: #eeeeee;
   padding: 0 16px;
 }
