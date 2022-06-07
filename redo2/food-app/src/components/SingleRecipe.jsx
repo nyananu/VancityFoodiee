@@ -21,6 +21,7 @@ function SingleRecipe(props){
                 >View Instructions</button>
 
                 <Popup trigger={buttonPopup}
+                       setTrigger={setButtonPopup}
                        title = {props.title}
                        instructions = {props.instructions}
                 />
