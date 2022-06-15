@@ -1,0 +1,23 @@
+@import "./componentStyles/header.css";
+@import "./componentStyles/recipeInputForm.css";
+@import "./componentStyles/singleRecipe.css";
+@import "./componentStyles/recipeList.css";
+@import "./componentStyles/footer.css";
+@import "./componentStyles/popup.css";
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Montserrat", sans-serif;
+}
+
+body{
+  justify-content: center;
+  align-items: center;
+  background: #eeeeee;
+  padding: 0 16px;
+}

@@ -1,0 +1,71 @@
+.recipeForm {
+    padding-top: 10px;
+    font-family: 'Montserrat Bold', sans-serif;
+    background-color: #eeeeee;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.recipeForm h3 {
+    margin: auto -16px;
+    padding: 16px 32px;
+}
+
+.row {
+    display: flex;
+}
+
+.column-left {
+    float: left;
+    margin: 10px;
+}
+
+.left {
+    width: 25%;
+}
+
+.right {
+    width: 75%;
+}
+
+.column-left input, textarea {
+    display: flex;
+    flex-direction: column;
+    border-radius: 25px;
+    border: 2px solid grey;
+    width: 250px;
+    font-family: "Source Sans Pro", sans-serif;
+    padding: 10px 15px;
+    margin: 0 10px 10px 10px;
+    text-align: center;
+    font-size: 18px;
+    color: grey;
+    font-weight: 300;
+}
+
+.column-right {
+    text-align: center;
+}
+
+#submitButton {
+    position: relative;
+    background-color: #F5BA13;
+    border: 2px solid;
+    color: #ffffff;
+    padding: 15px 32px;
+    margin-bottom: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-family: "Source Sans Pro", sans-serif;
+    transition-duration: 0.4s;
+    border-radius: 25px;
+}
+
+#submitButton:hover {
+    background-color: #F5BA13;
+    color: #000;
+}
