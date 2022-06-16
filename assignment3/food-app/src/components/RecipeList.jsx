@@ -4,7 +4,7 @@ import SingleRecipe from './SingleRecipe';
 import {getRecipesAsync} from '../redux/thunks';
 
 export const RecipeList = () => {
-    const recipes = useSelector(state => state.users.list);
+    const recipes = useSelector(state => state.recipes.list);
 
     const dispatch = useDispatch();
 

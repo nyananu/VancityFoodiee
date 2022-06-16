@@ -8,8 +8,8 @@ const INITIAL_STATE = {
     error: null
 };
 
-const usersSlice = createSlice({
-    name: 'users',
+const recipesSlice = createSlice({
+    name: 'recipes',
     initialState: INITIAL_STATE,
     reducers: {},
     extraReducers: (builder) => {
@@ -30,4 +30,4 @@ const usersSlice = createSlice({
     }
 });
 
-export default usersSlice.reducer;
+export default recipesSlice.reducer;

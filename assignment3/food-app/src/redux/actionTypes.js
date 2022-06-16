@@ -1,3 +1,3 @@
 export const actionTypes = {
-    GET_RECIPES: 'users/getRecipes'
+    GET_RECIPES: 'recipes/getRecipes'
 };

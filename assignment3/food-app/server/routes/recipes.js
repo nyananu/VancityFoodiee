@@ -38,7 +38,7 @@ const recipes = [
 ];
 
 
-/* GET users listing. */
+/* GET recipes listing. */
 router.get('/', function(req, res, next) {
   return res.send(recipes);
 });
