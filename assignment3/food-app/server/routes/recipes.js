@@ -2,7 +2,7 @@ var express = require('express');
 var router = express.Router();
 const { v4: uuid } = require('uuid');
 
-const recipes = [
+let recipes = [
   {
     id: uuid(),
     imgURL: "https://images.unsplash.com/photo-1521513919009-be90ad555598?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1099",
@@ -45,6 +45,13 @@ router.post('/', function(req,res,next) {
   recipe.id = uuid();
   recipes.push(recipe);
   return res.send(recipe);
+});
+
+/* DELETE a recipe */
+router.delete('/', function(req,res) {
+  let recipeTitle  = req.body.title;
+  recipes = recipes.filter(recipe => recipe.title !== recipeTitle);
+  return res.send(recipes);
 });
 
 module.exports = router;

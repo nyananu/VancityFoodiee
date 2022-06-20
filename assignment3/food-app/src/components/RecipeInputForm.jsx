@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
-import {addRecipe} from "../redux/actions"
 import {useDispatch} from "react-redux";
+import {addRecipeAsync} from "../redux/thunks";
 
 function RecipeInputForm(){
     const [title, setTitle] = useState("");
@@ -50,7 +50,7 @@ function RecipeInputForm(){
                     <button type="submit" id="submitButton"
                             onClick={(event)=>{
                                 event.preventDefault();
-                                dispatch(addRecipe({
+                                dispatch(addRecipeAsync({
                                     imgURL: imgURL,
                                     title: title,
                                     ingredients: ingredients,

@@ -8,3 +8,17 @@ export const getRecipesAsync = createAsyncThunk(
         return await RecipeService.getRecipes();
     }
 );
+
+export const addRecipeAsync = createAsyncThunk(
+    actionTypes.ADD_RECIPE,
+    async (recipe) => {
+        return await RecipeService.addRecipe(recipe);
+    }
+);
+
+export const deleteRecipeAsync = createAsyncThunk(
+    actionTypes.DELETE_RECIPE,
+    async (recipe) => {
+        return await RecipeService.deleteRecipe(recipe);
+    }
+);

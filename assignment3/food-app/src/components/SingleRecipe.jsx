@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import {useDispatch} from "react-redux";
-import {deleteRecipe} from "../redux/actions";
 import Popup from "./Popup";
+import {deleteRecipeAsync} from "../redux/thunks";
 
 function SingleRecipe(props){
     const[buttonPopup, setButtonPopup]= useState(false);
@@ -27,7 +27,7 @@ function SingleRecipe(props){
                 />
 
                 <button className='deleteButton'
-                        onClick={() => dispatch(deleteRecipe(props))}>
+                        onClick={() => dispatch(deleteRecipeAsync(props))}>
                     Delete
                 </button>
             </div>
