@@ -1,6 +1,15 @@
 import React, {useState} from 'react';
 import {useDispatch} from "react-redux";
-import {addRecipeAsync} from "../redux/thunks";
+import {addRecipeAsync, downloadRecipesAsync} from "../redux/thunks";
+
+function downloadFile(recipeBook) {
+    const blob = new Blob ([recipeBook],{type:'text/json'});
+    const url = URL.createObjectURL(blob);
+    const dlLink = document.createElement('a');
+    dlLink.download = 'recipeBook.json';
+    dlLink.href = url;
+    dlLink.click();
+}
 
 function RecipeInputForm(){
     const [title, setTitle] = useState("");
@@ -9,7 +18,6 @@ function RecipeInputForm(){
     const [instructions, setInstructions] = useState("");
 
     let dispatch = useDispatch();
-
     return(
         <div>
             <form className="recipeInputForm">
@@ -58,7 +66,19 @@ function RecipeInputForm(){
                                 }));
                             }}
                     >Submit</button>
+                    <button type="submit" id="submitButton"
+                            onClick={(event)=>{
+                                event.preventDefault();
+                                dispatch(downloadRecipesAsync())
+                                    .then(innerObj => {
+                                        const recipeBook = JSON.stringify(innerObj.payload);
+                                        downloadFile(recipeBook);
+                                    });
+                                
+                            }}
+                    >Download Recipes</button>
                 </div>
+
             </form>
         </div>
     )

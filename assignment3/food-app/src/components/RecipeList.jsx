@@ -17,6 +17,5 @@ export const RecipeList = () => {
                                                  title={recipe.title}
                                                  ingredients={recipe.ingredients}
                                                  instructions={recipe.instructions}
-
     />);
 };

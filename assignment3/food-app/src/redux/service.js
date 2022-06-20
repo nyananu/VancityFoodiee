@@ -6,6 +6,13 @@ const getRecipes = async () => {
     return response.json();
 };
 
+const downloadRecipes = async () => {
+    const response = await fetch('http://localhost:4000/recipes/download', {
+        method: 'GET'
+    });
+    return response.json();
+};
+
 
 // make service to add recipe
 const addRecipe = async (recipe) => {
@@ -47,6 +54,7 @@ const deleteRecipe = async (recipe) => {
 
 export default {
     getRecipes,
+    downloadRecipes,
     addRecipe,
     deleteRecipe
 };
