@@ -38,6 +38,11 @@ router.get('/', function(req, res, next) {
   res.send(recipes);
 });
 
+/* GET downloaded recipe */
+router.get('/download',function(req,res){
+  return res.json(recipes);
+});
+
 /* POST new recipe */
 router.post('/', function(req,res,next) {
   let recipe = req.body;

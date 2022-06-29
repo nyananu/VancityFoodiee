@@ -9,6 +9,13 @@ export const getRecipesAsync = createAsyncThunk(
     }
 );
 
+export const downloadRecipesAsync = createAsyncThunk(
+    actionTypes.DOWNLOAD_RECIPES,
+    async () => {
+        return await RecipeService.downloadRecipes();
+    }
+);
+
 export const addRecipeAsync = createAsyncThunk(
     actionTypes.ADD_RECIPE,
     async (recipe) => {

@@ -1,6 +1,15 @@
 import React, {useState} from 'react';
-import {addRecipeAsync} from "../redux/thunks";
+import {addRecipeAsync, downloadRecipesAsync} from "../redux/thunks";
 import {useDispatch} from "react-redux";
+
+function downloadFile(recipeBook) {
+    const blob = new Blob ([recipeBook],{type:'text/json'});
+    const url = URL.createObjectURL(blob);
+    const dlLink = document.createElement('a');
+    dlLink.download = 'recipeBook.json';
+    dlLink.href = url;
+    dlLink.click();
+}
 
 function RecipeInputForm(){
     const [title, setTitle] = useState("");
@@ -48,17 +57,28 @@ function RecipeInputForm(){
                     <button type="submit" id="submitButton"
                             onClick={(event)=>{
                                 event.preventDefault();
-                                    dispatch(addRecipeAsync({
+                                dispatch(addRecipeAsync({
                                     imgURL: imgURL,
                                     title: title,
                                     ingredients: ingredients,
                                     instructions:instructions
                                 }));
                             }}
-                                >Submit</button>
-                                </div>
-                                </form>
-                                </div>
-                                )
-                            }
-                            export default RecipeInputForm;
+                    >Submit</button>
+                    <button type="submit" id="submitButton"
+                            onClick={(event)=>{
+                                event.preventDefault();
+                                dispatch(downloadRecipesAsync())
+                                    .then(innerObj => {
+                                        const recipeBook = JSON.stringify(innerObj.payload);
+                                        downloadFile(recipeBook);
+                                    });
+
+                            }}
+                    >Download Recipes</button>
+                </div>
+            </form>
+        </div>
+    )
+}
+export default RecipeInputForm;
