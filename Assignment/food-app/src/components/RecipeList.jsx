@@ -1,21 +1,22 @@
-import React from 'react';
-import SingleRecipe from "./SingleRecipe";
-import {useSelector} from "react-redux";
+import React, {useEffect} from 'react';
+import {useSelector, useDispatch} from 'react-redux';
+import SingleRecipe from './SingleRecipe';
+import {getRecipesAsync} from '../redux/thunks';
 
-function RecipeList(){
-    let recipes = useSelector(state => state)
-    return(
-        <div className="recipeContainer">
-            {recipes.map(recipe =>{
-                return <SingleRecipe key={recipe.id}
-                                     imgURL={recipe.imgURL}
-                                     title={recipe.title}
-                                     ingredients={recipe.ingredients}
-                                     instructions={recipe.instructions}
-                />
-            })}
-        </div>
-    )
-}
+export const RecipeList = () => {
+    const recipes = useSelector(state => state.users.list);
 
-export default RecipeList;
+    const dispatch = useDispatch();
+
+    useEffect(() => {
+        dispatch(getRecipesAsync());
+    }, []);
+
+    return recipes.map((recipe) => <SingleRecipe key={recipe.id}
+                                                 imgURL={recipe.imgURL}
+                                                 title={recipe.title}
+                                                 ingredients={recipe.ingredients}
+                                                 instructions={recipe.instructions}
+    />);
+};
+
