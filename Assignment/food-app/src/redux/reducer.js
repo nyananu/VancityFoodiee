@@ -1,6 +1,6 @@
 import { createSlice } from '@reduxjs/toolkit';
 import { REQUEST_STATE } from './utils';
-import { getRecipesAsync } from './thunks';
+import { getRecipesAsync, addRecipeAsync } from './thunks';
 
 const INITIAL_STATE = {
     list: [],
@@ -14,6 +14,7 @@ const usersSlice = createSlice({
     reducers: {},
     extraReducers: (builder) => {
         builder
+            // GET RECIPES
             .addCase(getRecipesAsync.pending, (state) => {
                 state.getRecipes = REQUEST_STATE.PENDING;
                 state.error = null;
@@ -24,6 +25,19 @@ const usersSlice = createSlice({
             })
             .addCase(getRecipesAsync.rejected, (state, action) => {
                 state.getRecipes = REQUEST_STATE.REJECTED;
+                state.error = action.error;
+            })
+            // ADD RECIPE
+            .addCase(addRecipeAsync.pending, (state) => {
+                state.addRecipe = REQUEST_STATE.PENDING;
+                state.error = null;
+            })
+            .addCase(addRecipeAsync.fulfilled, (state, action) => {
+                state.addRecipe = REQUEST_STATE.FULFILLED;
+                state.list.push(action.payload);
+            })
+            .addCase(addRecipeAsync.rejected, (state, action) => {
+                state.addRecipe = REQUEST_STATE.REJECTED;
                 state.error = action.error;
             })
     }});

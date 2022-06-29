@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import {addRecipe} from "../redux/actions"
+import {addRecipeAsync} from "../redux/thunks";
 import {useDispatch} from "react-redux";
 
 function RecipeInputForm(){
@@ -7,9 +7,7 @@ function RecipeInputForm(){
     const [imgURL, setImgURL] = useState("");
     const [ingredients, setIngredients] = useState("");
     const [instructions, setInstructions] = useState("");
-
     let dispatch = useDispatch();
-
     return(
         <div>
             <form className="recipeInputForm">
@@ -22,14 +20,14 @@ function RecipeInputForm(){
                             placeholder="Recipe Title"
                             value={title}
                             onChange={(e) =>setTitle(e.target.value)}
-                            />
+                        />
                         <input
                             type="text"
                             name="imageURL"
                             placeholder="Image URL"
                             value={imgURL}
                             onChange={(e) =>setImgURL(e.target.value)}
-                            />
+                        />
                         <textarea
                             name="ingredients"
                             placeholder="Ingredients"
@@ -37,7 +35,7 @@ function RecipeInputForm(){
                             cols="30"
                             value={ingredients}
                             onChange={(e) =>setIngredients(e.target.value)}
-                             />
+                        />
                         <textarea
                             name="instructions"
                             placeholder="Instructions"
@@ -50,18 +48,17 @@ function RecipeInputForm(){
                     <button type="submit" id="submitButton"
                             onClick={(event)=>{
                                 event.preventDefault();
-                                dispatch(addRecipe({
+                                    dispatch(addRecipeAsync({
                                     imgURL: imgURL,
                                     title: title,
                                     ingredients: ingredients,
                                     instructions:instructions
                                 }));
                             }}
-                    >Submit</button>
-                </div>
-            </form>
-        </div>
-    )
-}
-
-export default RecipeInputForm;
+                                >Submit</button>
+                                </div>
+                                </form>
+                                </div>
+                                )
+                            }
+                            export default RecipeInputForm;
