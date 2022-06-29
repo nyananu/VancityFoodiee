@@ -25,7 +25,27 @@ const addRecipe = async (recipe) => {
     return data;
 };
 
+// make service to delete recipe
+const deleteRecipe = async (recipe) => {
+    const response = await fetch('http://localhost:4000/recipes', {
+        method: 'DELETE',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(recipe)
+    });
+
+    const data = await response.json();
+    if (!response.ok) {
+        const errorMsg = data?.message;
+        throw new Error(errorMsg)
+    }
+
+    return data;
+};
+
 export default {
     getRecipes,
-    addRecipe
+    addRecipe,
+    deleteRecipe
 };

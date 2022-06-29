@@ -46,4 +46,11 @@ router.post('/', function(req,res,next) {
   return res.send(recipe);
 });
 
+/* DELETE a recipe */
+router.delete('/', function(req,res) {
+  let recipeTitle  = req.body.title;
+  recipes = recipes.filter(recipe => recipe.title !== recipeTitle);
+  return res.send(recipes);
+});
+
 module.exports = router;

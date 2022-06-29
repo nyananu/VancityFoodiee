@@ -15,3 +15,10 @@ export const addRecipeAsync = createAsyncThunk(
         return await RecipeService.addRecipe(recipe);
     }
 );
+
+export const deleteRecipeAsync = createAsyncThunk(
+    actionTypes.DELETE_RECIPE,
+    async (recipe) => {
+        return await RecipeService.deleteRecipe(recipe);
+    }
+);
