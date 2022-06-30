@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bb62f50a-111a-4ec6-8d71-bcc0373fc819" name="Changes" comment="" />
+    <list default="true" id="bb62f50a-111a-4ec6-8d71-bcc0373fc819" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/food-app/server/generate-data.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/food-app/server/model.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/food-app/server/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/food-app/server/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/food-app/server/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/food-app/server/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/food-app/server/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/food-app/server/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/food-app/server/routes/recipes.js" beforeDir="false" afterPath="$PROJECT_DIR$/food-app/server/routes/recipes.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -26,7 +34,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/anushasaleem/Desktop/455Assignments/assignment3&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/anushasaleem/Desktop/455Assignments/Assignment&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;ts.external.directory.path&quot;: &quot;/Applications/WebStorm.app/Contents/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
@@ -55,6 +63,8 @@
       <workItem from="1655963444768" duration="1982000" />
       <workItem from="1656053234527" duration="1270000" />
       <workItem from="1656536641241" duration="52000" />
+      <workItem from="1656542294567" duration="5976000" />
+      <workItem from="1656621762053" duration="2596000" />
     </task>
     <servers />
   </component>
