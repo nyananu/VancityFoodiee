@@ -15,24 +15,40 @@ router.get('/', function(req, res, next) {
   })
 });
 
-/* GET downloaded recipe */
-router.get('/download',function(req,res){
-  return res.json(recipes);
-});
+// /* GET downloaded recipe */
+// router.get('/download',function(req,res){
+//   return res.json(recipes);
+// });
 
 /* POST new recipe */
 router.post('/', function(req,res,next) {
-  let recipe = req.body;
-  recipe.id = uuid();
-  recipes.push(recipe);
-  return res.send(recipe);
+  const newRecipe = new Recipe({
+    imgURL: req.body.imgURL,
+    title: req.body.title,
+    ingredients: req.body.ingredients,
+    instructions: req.body.instructions
+  });
+
+  newRecipe.save(function(err) {
+    if(!err) {
+      res.send('Successfully added a new recipe')
+    } else {
+      res.send(err);
+    }
+  });
 });
 
 /* DELETE a recipe */
 router.delete('/', function(req,res) {
-  let recipeTitle  = req.body.title;
-  recipes = recipes.filter(recipe => recipe.title !== recipeTitle);
-  return res.send(recipes);
+  Recipe.deleteOne(
+      {title: req.body.title},
+      function(err) {
+    if(!err) {
+      res.send('Successfully deleted the recipe')
+    } else {
+      res.send(err)
+    }
+  })
 });
 
 module.exports = router;
