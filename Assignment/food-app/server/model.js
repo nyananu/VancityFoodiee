@@ -1,5 +1,8 @@
+// use this file to start DB using <node model.js>
+
 const mongoose = require('mongoose');
 
+// connect to Atlas cloud
 mongoose.connect(
     "mongodb+srv://m001-student:m001-mongodb-basics@sandbox.xqqaa.mongodb.net/?retryWrites=true&w=majority",
     {useNewUrlParser:true}
@@ -7,6 +10,7 @@ mongoose.connect(
 
 // create schema
 const recipeSchema = new mongoose.Schema({
+    id: String,
     imgURL: String,
     title: String,
     ingredients: String,
