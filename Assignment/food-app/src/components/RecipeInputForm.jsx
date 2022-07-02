@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import {addRecipeAsync, downloadRecipesAsync} from "../redux/thunks";
+import {addRecipeAsync, downloadRecipesAsync, getRecipesAsync} from "../redux/thunks";
 import {useDispatch} from "react-redux";
 
 function downloadFile(recipeBook) {
@@ -55,20 +55,21 @@ function RecipeInputForm(){
                         />
                     </div>
                     <button type="submit" id="submitButton"
-                            onClick={(event)=>{
+                            onClick={async  (event)=>{
                                 event.preventDefault();
-                                dispatch(addRecipeAsync({
+                                 await dispatch(addRecipeAsync({
                                     imgURL: imgURL,
                                     title: title,
                                     ingredients: ingredients,
                                     instructions:instructions
                                 }));
+                                await dispatch(getRecipesAsync());
                             }}
                     >Submit</button>
                     <button type="submit" id="submitButton"
-                            onClick={(event)=>{
+                            onClick={async (event)=>{
                                 event.preventDefault();
-                                dispatch(downloadRecipesAsync())
+                               await dispatch(downloadRecipesAsync())
                                     .then(innerObj => {
                                         const recipeBook = JSON.stringify(innerObj.payload);
                                         downloadFile(recipeBook);

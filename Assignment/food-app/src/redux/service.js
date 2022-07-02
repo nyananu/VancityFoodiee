@@ -29,7 +29,6 @@ const addRecipe = async (recipe) => {
         const errorMsg = data?.message;
         throw new Error(errorMsg)
     }
-
     return data;
 };
 

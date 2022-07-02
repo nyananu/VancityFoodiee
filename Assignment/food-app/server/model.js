@@ -10,7 +10,6 @@ mongoose.connect(
 
 // create schema
 const recipeSchema = new mongoose.Schema({
-    id: String,
     imgURL: String,
     title: String,
     ingredients: String,

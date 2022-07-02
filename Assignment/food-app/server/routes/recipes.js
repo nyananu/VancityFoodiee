@@ -1,11 +1,9 @@
 var express = require('express');
 var router = express.Router();
-const { v4: uuid } = require('uuid');
 const Recipe = require("../model");
 
 // make base recipes
 const friedEgg = new Recipe({
-  id: uuid(),
   imgURL: "https://images.unsplash.com/photo-1521513919009-be90ad555598?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1099",
   title: "Sunny Side Up",
   ingredients: "egg, oil, salt, pepper",
@@ -13,7 +11,6 @@ const friedEgg = new Recipe({
 });
 
 const toast = new Recipe({
-  id: uuid(),
   imgURL: "https://images.unsplash.com/photo-1584776296944-ab6fb57b0bdd?ixlib=rb-1.2.1&raw_url=true&q=80&fm=jpg&crop=entropy&cs=tinysrgb&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1158",
   title: "Buttery Toast",
   ingredients: "brioche slice, butter",
@@ -21,7 +18,6 @@ const toast = new Recipe({
 });
 
 const ramen = new Recipe({
-  id: uuid(),
   imgURL: "https://images.unsplash.com/photo-1600326145359-3a44909d1a39?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80",
   title: "Savoury Ramen",
   ingredients: "ramen pack, egg, scallions",
@@ -29,7 +25,6 @@ const ramen = new Recipe({
 });
 
 const friedRice = new Recipe ({
-  id: uuid(),
   imgURL: "https://images.unsplash.com/photo-1612531753325-8efb87255568?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80",
   title: "Fried Rice",
   ingredients: "egg, day-old rice, scallions, mixed veggies, soy sauce, salt, pepper, sesame oil",
@@ -37,17 +32,23 @@ const friedRice = new Recipe ({
 });
 
 // save recipes to db
-friedEgg.save();
-toast.save();
-ramen.save();
-friedRice.save();
+// friedEgg.save();
+// toast.save();
+// ramen.save();
+// friedRice.save();
 
 
 /* GET recipes listing. */
-router.get('/', function(req, res, next) {
-  Recipe.find(async function(err, foundRecipes){
+router.get('/',  function(req, res, next) {
+  let recipesFromDb = [];
+   Recipe.find(async function(err, foundRecipes){
     if(!err){
-      await res.send(foundRecipes);
+      console.log(foundRecipes);
+      for (let recipe of foundRecipes) {
+        recipesFromDb.push(recipe);
+      }
+
+      await res.send(recipesFromDb);
     } else {
       res.send(err);
     }
@@ -62,7 +63,6 @@ router.get('/', function(req, res, next) {
 /* POST new recipe */
 router.post('/', function(req,res,next) {
   const newRecipe = new Recipe({
-    id: uuid(),
     imgURL: req.body.imgURL,
     title: req.body.title,
     ingredients: req.body.ingredients,
@@ -71,24 +71,24 @@ router.post('/', function(req,res,next) {
 
   newRecipe.save(function(err) {
     if(!err) {
-      res.send(newRecipe)
+      res.send('Recipe added successfully');
     } else {
       res.send(err);
     }
   });
 });
 
-// /* DELETE a recipe */
-// router.delete('/', function(req,res) {
-//   Recipe.deleteOne(
-//       {title: req.body.title},
-//       function(err) {
-//     if(!err) {
-//       res.send(Recipe)
-//     } else {
-//       res.send(err)
-//     }
-//   })
-// });
+/* DELETE a recipe */
+router.delete('/', function(req,res) {
+  Recipe.deleteOne(
+      {title: req.body.title},
+      function(err) {
+    if(!err) {
+      res.send('Successfully deleted recipe');
+    } else {
+      res.send(err)
+    }
+  })
+});
 
 module.exports = router;
