@@ -4,6 +4,10 @@
     <list default="true" id="bb62f50a-111a-4ec6-8d71-bcc0373fc819" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/food-app/server/routes/recipes.js" beforeDir="false" afterPath="$PROJECT_DIR$/food-app/server/routes/recipes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/food-app/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/food-app/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/food-app/src/componentStyles/recipeList.css" beforeDir="false" afterPath="$PROJECT_DIR$/food-app/src/componentStyles/recipeContainer.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/food-app/src/components/RecipeList.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/food-app/src/components/RecipeContainer.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/food-app/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/food-app/src/index.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,7 +63,12 @@
       <workItem from="1656053234527" duration="1270000" />
       <workItem from="1656536641241" duration="52000" />
       <workItem from="1656542294567" duration="5976000" />
-      <workItem from="1656621762053" duration="3821000" />
+      <workItem from="1656621762053" duration="16248000" />
+      <workItem from="1656892127550" duration="2225000" />
+      <workItem from="1656900375414" duration="1348000" />
+      <workItem from="1657085337608" duration="382000" />
+      <workItem from="1657406671401" duration="149000" />
+      <workItem from="1657572174779" duration="1529000" />
     </task>
     <servers />
   </component>
