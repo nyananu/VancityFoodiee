@@ -6,7 +6,6 @@ const cors = require('cors');
 
 var indexRouter = require('./routes/index');
 var recipesRouter = require('./routes/recipes');
-
 var app = express();
 
 app.use(cors());

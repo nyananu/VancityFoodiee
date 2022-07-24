@@ -1,6 +1,6 @@
 import './index.css';
 import RecipeInputForm from "./components/RecipeInputForm";
-import {RecipeList} from "./components/RecipeList";
+import {RecipeContainer} from "./components/RecipeContainer";
 import Header from "./components/Header";
 
 function App() {
@@ -8,7 +8,7 @@ function App() {
         <div className="App">
             <Header/>
             <RecipeInputForm />
-            <RecipeList />
+            <RecipeContainer />
         </div>
     );
 }
