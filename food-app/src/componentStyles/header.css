@@ -1,7 +1,6 @@
 /*Header component*/
 header {
-    background-color: pink;
-    /*background-color: #F5BA13;*/
+    background-color: #F5BA13;
     margin: auto -16px;
     padding: 16px 32px;
     box-shadow:0 0 10px 0 rgba(0, 0, 0, 0.3);
