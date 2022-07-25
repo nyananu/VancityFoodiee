@@ -27,6 +27,6 @@ app.get("*", (req, res) => {
 
 
 //app.use('/', indexRouter);
-app.use('/recipes', recipesRouter);
+app.use('/api/recipes', recipesRouter);
 
 module.exports = app;
