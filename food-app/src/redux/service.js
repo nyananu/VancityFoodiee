@@ -1,6 +1,6 @@
 // make service to get recipes
 const getRecipes = async () => {
-    const response = await fetch('api/recipes', {
+    const response = await fetch('/api/recipes', {
         method: 'GET'
     });
     return response.json();
