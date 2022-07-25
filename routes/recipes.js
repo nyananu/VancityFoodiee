@@ -34,7 +34,7 @@ router.get('/download',function(req,res){
 });
 
 /* POST new recipe */
-router.post('/', function(req,res,next) {
+router.post('/postRecipe', function(req,res,next) {
   const newRecipe = new Recipe({
     imgURL: req.body.imgURL,
     title: req.body.title,
@@ -52,7 +52,7 @@ router.post('/', function(req,res,next) {
 });
 
 /* DELETE a recipe */
-router.delete('/', function(req,res) {
+router.delete('/deleteRecipe', function(req,res) {
   Recipe.deleteOne(
       {title: req.body.title},
       function(err) {

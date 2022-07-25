@@ -13,16 +13,16 @@ app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
-//if (process.env.NODE_ENV === 'production') {
+if (process.env.NODE_ENV === 'production') {
 //setting up static folder
 app.use(express.static(path.join(__dirname, "food-app", "build")))
 app.get("*", (req, res) => {
     res.sendFile(path.join(__dirname, "food-app", "build", "index.html"));
 });
-// } else {
-//     app.use(express.static(path.join(__dirname, 'public')));
-//
-// }
+} else {
+    app.use(express.static(path.join(__dirname, 'public')));
+
+}
 
 
 
