@@ -19,11 +19,10 @@ app.use(cookieParser());
      app.get("*", (req, res) => {
          res.sendFile(path.join(__dirname, "food-app", "build", "index.html"));
      });
- }
-// } else {
-//     app.use(express.static(path.join(__dirname, 'public')));
-//
-// }
+ } else {
+    app.use(express.static(path.join(__dirname, 'public')));
+
+}
 
 
 
