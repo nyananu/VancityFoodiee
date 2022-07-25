@@ -9,7 +9,7 @@ export const RecipeContainer = () => {
 
     useEffect(() => {
         dispatch(getRecipesAsync());
-    });
+    },[]);
 
     return recipes.map((recipe) => <SingleRecipe key={recipe.id}
                                                  imgURL={recipe.imgURL}
