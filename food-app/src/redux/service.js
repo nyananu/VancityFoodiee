@@ -1,6 +1,6 @@
 // make service to get recipes
 const getRecipes = async () => {
-    const response = await fetch('/api/recipes', {
+    const response = await fetch('api/recipes', {
         method: 'GET'
     });
     return response.json();
@@ -8,7 +8,7 @@ const getRecipes = async () => {
 
 // make service to download recipes
 const downloadRecipes = async () => {
-    const response = await fetch('/api/download', {
+    const response = await fetch('api/download', {
         method: 'GET'
     });
     return response.json();
@@ -16,7 +16,7 @@ const downloadRecipes = async () => {
 
 // make service to add recipe
 const addRecipe = async (recipe) => {
-    const response = await fetch('/api/recipes/postRecipe', {
+    const response = await fetch('api/recipes/postRecipe', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
@@ -34,7 +34,7 @@ const addRecipe = async (recipe) => {
 
 // make service to delete recipe
 const deleteRecipe = async (recipe) => {
-    const response = await fetch('/api/recipes/deleteRecipe', {
+    const response = await fetch('api/recipes/deleteRecipe', {
         method: 'DELETE',
         headers: {
             'Content-Type': 'application/json'
