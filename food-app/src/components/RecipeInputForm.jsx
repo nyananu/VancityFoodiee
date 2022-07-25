@@ -71,6 +71,7 @@ function RecipeInputForm(){
                                 event.preventDefault();
                                await dispatch(downloadRecipesAsync())
                                     .then(innerObj => {
+                                        console.log('here')
                                         const recipeBook = JSON.stringify(innerObj.payload);
                                         downloadFile(recipeBook);
                                     });

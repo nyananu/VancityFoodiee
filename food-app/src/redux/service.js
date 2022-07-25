@@ -8,7 +8,7 @@ const getRecipes = async () => {
 
 // make service to download recipes
 const downloadRecipes = async () => {
-    const response = await fetch('api/download', {
+    const response = await fetch('api/recipes/download', {
         method: 'GET'
     });
     return response.json();
