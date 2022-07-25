@@ -27,7 +27,7 @@ app.use(cookieParser());
 
 
 
-//app.use('/api', indexRouter);
+app.use('/api', indexRouter);
 app.use('/api/recipes', recipesRouter);
 
 module.exports = app;
