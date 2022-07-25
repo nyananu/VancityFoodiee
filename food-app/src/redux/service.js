@@ -51,9 +51,10 @@ const deleteRecipe = async (recipe) => {
     return data;
 };
 
-export default {
+const exportObject =  {
     getRecipes,
     downloadRecipes,
     addRecipe,
     deleteRecipe
 };
+export default exportObject;
