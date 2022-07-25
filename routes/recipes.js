@@ -4,7 +4,7 @@ const Recipe = require("../models/model");
 
 
 /* GET recipes listing. */
-router.get('/',  function(req, res, next) {
+router.get('/api',  function(req, res, next) {
   let recipesFromDb = [];
    Recipe.find(async function(err, foundRecipes){
     if(!err){
