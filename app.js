@@ -26,7 +26,7 @@ app.get("*", (req, res) => {
 
 
 
-app.use('/', indexRouter);
+//app.use('/', indexRouter);
 app.use('/recipes', recipesRouter);
 
 module.exports = app;
