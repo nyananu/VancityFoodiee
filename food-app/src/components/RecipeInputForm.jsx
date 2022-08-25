@@ -20,7 +20,7 @@ function RecipeInputForm(){
     return(
         <div>
             <form className="recipeInputForm">
-                <h3>Enter a new recipe!</h3>
+                <br/>
                 <div className="row">
                     <div className="column-left">
                         <input
