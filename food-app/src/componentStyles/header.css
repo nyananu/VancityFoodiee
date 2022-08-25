@@ -1,9 +1,20 @@
 /*Header component*/
 header {
-    background-color: green;
+    background-color: #F5BA13;
     margin: auto -16px;
     padding: 16px 32px;
     box-shadow:0 0 10px 0 rgba(0, 0, 0, 0.3);
+}
+
+.headerIcon {
+    float: right;
+    scale: 2;
+    margin-top: 10px;
+}
+
+.headerIcon:hover {
+    scale: 3;
+    transition: all ease 0.3s;
 }
 
 header h1 {
